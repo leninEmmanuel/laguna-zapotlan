@@ -1,0 +1,7 @@
+{
+  "name": "laguna-zapotlan",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
