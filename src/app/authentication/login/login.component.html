@@ -1,4 +1,42 @@
-<ion-content color="" padding>
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>LOGIN</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen>
+    <form>
+      <ion-list lines="full" class="ion-no-margin ion-no-padding">
+
+        <ion-item>
+          <ion-label position="stacked">Email<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Passowrd<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text"></ion-input>
+          <a routerLink='/authentication/forgot-password'>Don't remember your password?</a>
+        </ion-item>
+
+      </ion-list>
+
+      <div class="ion-padding">
+        <ion-button expand="block" type="submit" class="ion-no-margin">Login</ion-button>
+      </div>
+      <div class="ion-padding" text-center>
+        If you don't have an account, please <a routerLink='/authentication/register'>register</a> first!
+      </div>
+
+    </form>
+  </ion-content>
+</ion-app>
+
+
+
+
+<!-- <ion-content color="" padding>
   <form #form="ngForm" (ngSubmit)="login(form)">
     <ion-grid>
       <ion-row color="" justify-content-center>
@@ -27,5 +65,5 @@
       </ion-row>
     </ion-grid>
   </form>
-</ion-content>
+</ion-content> -->
   

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { AuthenticationPageRoutingModule } from './authentication-routing.module';
@@ -10,19 +10,23 @@ import { AuthenticationPage } from './authentication.page';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotComponent } from './forgot/forgot.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   imports: [
-    CommonModule,
     FormsModule,
     IonicModule,
+    RouterModule,
+    CommonModule,
+    ReactiveFormsModule,
     AuthenticationPageRoutingModule
   ],
   declarations: [
     AuthenticationPage,
     RegisterComponent,
-    LoginComponent,
-    ForgotComponent
+    ProfileComponent,
+    ForgotComponent,
+    LoginComponent
   ]
 })
 export class AuthenticationPageModule {}

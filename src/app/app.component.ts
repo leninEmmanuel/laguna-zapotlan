@@ -28,7 +28,7 @@ export class AppComponent {
       if (false) {
         this.router.navigate(['']);
       } else {
-        this.router.navigate(['authentication/forgot-password']);
+        this.router.navigate(['authentication/login']);
       }
     });
   }
